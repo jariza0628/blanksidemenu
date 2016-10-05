@@ -1,0 +1,44 @@
+<ion-view view-title="Signup">
+  <ion-content >
+    <h1 class="padding">Registro de usuario</h1>
+      <form>
+         <div class="list">
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Nombre</span>
+            <input type="text" placeholder="Nombre" ng-model="signupData.name">
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Apellido</span>
+            <input type="text" placeholder="Apellido" ng-model="signupData.lastname">
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Email</span>
+            <input type="text" placeholder="Email" ng-model="signupData.email">
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Dirección</span>
+            <input type="text" placeholder="Dirección" ng-model="signupData.address">
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Contraseña</span>
+            <input type="password" placeholder="Contraseña" ng-model="signupData.password">
+          </label>
+        </div>
+      </form>
+      <div class="row" style="text-align: center;">
+        <div class="col">
+          <a style="text-decoration: none;" ng-click="termsModal()">Términos y condiciones</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a class="button button-block button-energized" ng-click="submitSignup()">Registrar</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a class="button button-block button-energized" href="#/home/login">Ingresar</a>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>
